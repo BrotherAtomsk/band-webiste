@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hello Bulma!</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a
+          role="button"
+          class="navbar-burger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbarBasicExample"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item" href="index.html"> Home </a>
+
+          <a class="navbar-item" href="about.html"> About</a>
+          <a class="navbar-item" href="discography.html"> Discography </a>
+          <a class="navbar-item" href="music-videos.html"> Music Videos </a>
+          <a class="navbar-item" href="tour.html"> Tour </a>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <h1 class="title">Who Is Yxngxr1</h1>
+      <img src="images/YxngCov.jpg" alt="" />
+      <p>
+        Timothy Francis Lee, aka Yxngxr1 , is a singer and rapper from Cardiff,
+        currently signed to American record label EMPIRE. Yxngxr1 talks about
+        American artists Tyler, the Creator and Dominic Fike are people he
+        admires, and inspire his music.He started gaining on SoundCloud in early
+        2019 with singles like "Tyler" and "RockStore." In March 2020, he
+        released an eight-track project entitled I Don't Suit Hats. Carl Marsh
+        finds out more about this Generation Z internet rising star.
+      </p>
+    </div>
+    <a href="https://www.instagram.com/yxngxr1/">
+      <button class="button">Instagram</button>
+    </a>
+    <a
+      href="https://open.spotify.com/artist/2jwRHcdgkRhelYEMqndDKe?si=0itGFu3dS4i1zPvZyzWisg"
+      ><button class="button">Spotify</button>
+    </a>
+    <a href="https://twitter.com/yxngxr1?s=20&t=b7lqKxF1Hg5QEW1sveKr5A">
+      <button class="button">Twitter</button>
+    </a>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        // Get all "navbar-burger" elements
+        const $navbarBurgers = Array.prototype.slice.call(
+          document.querySelectorAll(".navbar-burger"),
+          0
+        );
+
+        // Add a click event on each of them
+        $navbarBurgers.forEach((el) => {
+          el.addEventListener("click", () => {
+            // Get the target from the "data-target" attribute
+            const target = el.dataset.target;
+            const $target = document.getElementById(target);
+
+            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+            el.classList.toggle("is-active");
+            $target.classList.toggle("is-active");
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
